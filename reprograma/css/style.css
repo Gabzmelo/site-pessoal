@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 12px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    background-color: #F2F2F2;
+}
+
+/*fontes */
+
+p {
+    font-size: 15px;
+}
+
+.banner__titulo {
+    font-size: 4rem;
+    color: white;
+}
+
+
+a {
+    text-decoration: none;
+ 
+}
+
+.sobre__filho-titulo {
+    font-size: 4rem;
+    color: #0D0D0D;
+  
+}
+
+strong {
+    color: #0D0D0D;
+}
+
+.sobre__filho-habilidades__titulo {
+    color: #0D0D0D;
+}
+
+/*layout */
+
+/*botao */
+
+.btn:hover {
+    background-color: #0D0D0D;
+    top: -2px;
+}
+
+.btn {
+    background-color: #0D0D0D;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    position: relative;
+}
+
+
+
+
+/*banner */
+
+.banner__subtitulo {
+    font-size: 2rem;
+    color: #D90D0D;
+} 
+
+.banner {
+    background: url(../imagem/final.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    text-align: center;
+    padding-top: 20rem;
+    color: white;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+/*secao sobre */
+
+.sobre-pai {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sobre__filho-descricao, .sobre__filho-habilidades {
+    width: 40%;
+    line-height: 1.5;
+    color: #231D20;
+}
+.sobre__filho-descricao__destaque, .sobre__filho-habilidades__titulo {
+    font-size: 2rem;
+    color: #231D20;
+}
+
+.sobre__filho-habilidades__lista {
+    padding-left: 2rem;
+    line-height: 2;
+    font-size: 1.2rem;
+}
+
+.sobre__filho-descricao__regular {
+    margin-bottom: 30px;
+}
+
+
+.redes-sociais {
+    display: flex;
+    justify-content: space-between;
+    margin: 70px 0;
+    flex-wrap: wrap;
+}
+
+
+.redes-sociais__link {
+    background-color: #8C0303;
+    width: 20%;
+    padding: 2rem 0;
+    margin: 0 1rem;
+    text-align: center;
+    color: white;
+    border-radius: 2rem;
+}
+
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: none;
+    color: #D90D0D;
+}
+
+.rodape__texto-span {
+    color: #0D0D0D;
+    font-weight: 700;
+    /* font-family: monospace; */
+}
+
+@media (max-width: 1024px) {
+    html {
+        font-size: 8px;
+    }
+
+    .container {
+        max-width: 960px;
+        padding: 4rem;
+    }
+
+}
+
+@media (max-width: 425px) {
+    .sobre__titulo {
+        text-align: center;
+    }
+
+    .sobre-pai {
+        flex-direction: column;
+    }
+
+    .sobre__filho-descricao, 
+    .sobre__filho-habilidades {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .sobre__filho-habilidades__lista {
+        font-size: 1.8rem;
+    }
+
+    .redes-sociais {
+        flex-direction: column;
+        align-items: center;
+        /* margin: 0 auto; */
+        margin: -35px 0;
+        padding: 0;
+    }
+
+    .redes-sociais__link {
+        width: 50%;
+        margin: 1rem 0;
+        /* margin: 0 auto; */
+    }
+
+    .rodape {
+        margin-top: 30px;
+    }
+
+
+}
