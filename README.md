@@ -1,4 +1,4 @@
-# Meu primeiro site
-Site feito durante um workshop da reprograma. O meu primeiro desenvolvimento em HTML e CSS. 
+# My first website
+Reprograma workshop. My first development in HTML and CSS.
 
 https://gabriellimeloreprograma.netlify.app/
